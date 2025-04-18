@@ -1,9 +1,21 @@
-$base-size: 24px;
+$theme : 'light';
 
-h1{
-  // font-size: $base-size * 10;
-  // font-size: $base-size + 10;
-  // font-size: $base-size - 10;
-  // font-size: $base-size % 9;
-  font-size: $base-size / 3;
+body{
+  @if $theme == 'dark' {
+    background-color: black;
+    color: white;
+  } @else {
+    background-color: white;
+    color: black;
+  }
+}
+
+@for $i from 1 through 5 {
+  .item-#{$i} {
+    width: 100px * $i;
+    height: 100px * $i;
+    background-color: lighten(black, $i * 10%);
+    margin: 10px;
+    display: inline-block;
+  }
 }
