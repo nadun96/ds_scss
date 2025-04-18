@@ -10,12 +10,13 @@ body{
   }
 }
 
-@for $i from 1 through 5 {
-  .item-#{$i} {
-    width: 100px * $i;
-    height: 100px * $i;
-    background-color: lighten(black, $i * 10%);
-    margin: 10px;
-    display: inline-block;
+@each $temp in green, red, blue {
+  .#{$temp}-el {
+    background-color: $temp;
   }
+}
+
+div{
+  width: 100px;
+  height: 100px;
 }
