@@ -13,12 +13,6 @@
   --font-size: 16px;
 }
 
-h1 {
-  font-size: 50px;
-  color: red;
-  font-weight: bold;
-}
-
 ul {
   list-style: none;
   padding: 0;
@@ -47,4 +41,25 @@ div {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+}
+
+text-style, h1 {
+  font-size: 50px;
+  color: var(--main-color);
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  letter-spacing: 1px;
+  line-height: 1.5;
+  word-spacing: 2px;
+  font-family: "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 5rem;
+  font-style: italic;
+  font-variant: small-caps;
+}
+
+h1 {
+  font-style: optional;
 }/*# sourceMappingURL=main.css.map */
