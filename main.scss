@@ -50,3 +50,21 @@ h2{
     color: $main-color;
     font-weight: $font-weight-bold;
 }
+
+@mixin display($direction, $align-items, $justify-content) {
+    flex-direction: $direction;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+$width: 100px;
+$height: 100px;
+$border-color:#e67e22;
+
+div{
+    display: flex;
+    width: $width;
+    height:$height;
+    border: 1px solid $border-color;
+    @include display(column, center, center);
+}
