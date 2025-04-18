@@ -1,3 +1,26 @@
+
+@import "button-styles";
+:root{
+    --main-color: #3498db;
+    --secondary-color: #2ecc71;
+    --font-size: 16px;
+} 
+$main-color: var(--main-color);
+$secondary-color: var(--secondary-color);
+$font-size: var(--font-size);
+$font-family: 'Arial, sans-serif';
+$font-weight: 400;
+$font-size-lg: 24px;
+$font-size-md: 18px;
+$font-size-sm: 14px;
+$font-size-xs: 12px;
+$font-weight-bold: 700;
+$font-weight-normal: 400;
+$font-weight-light: 300;
+$font-weight-bolder: 800;
+$font-weight-lighter: 200;
+
+
 $font-size : 50px;
 $color: red;
 
@@ -15,8 +38,15 @@ ul{
     >li {
         display: inline-block;
         margin-right: 10px;
+        margin-bottom: 1rem;
         &:last-child{
             margin-right: 0;
         }
     }
+}
+
+h2{
+    font-size: $font-size-lg;
+    color: $main-color;
+    font-weight: $font-weight-bold;
 }

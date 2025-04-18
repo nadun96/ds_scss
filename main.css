@@ -1,3 +1,18 @@
+.btn {
+  background-color: #3498db;
+  padding: 8px 5px;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+:root {
+  --main-color: #3498db;
+  --secondary-color: #2ecc71;
+  --font-size: 16px;
+}
+
 h1 {
   font-size: 50px;
   color: red;
@@ -12,7 +27,14 @@ ul {
 ul > li {
   display: inline-block;
   margin-right: 10px;
+  margin-bottom: 1rem;
 }
 ul > li:last-child {
   margin-right: 0;
+}
+
+h2 {
+  font-size: 24px;
+  color: var(--main-color);
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
