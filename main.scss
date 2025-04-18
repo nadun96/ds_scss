@@ -1,9 +1,9 @@
-@function calcuate-height($height) {
-  @return $height + 250px;
-}
+$base-size: 24px;
 
-div {
-  height: calcuate-height(500px);
-  background-color: royalblue;
-  width: 100vh;
+h1{
+  // font-size: $base-size * 10;
+  // font-size: $base-size + 10;
+  // font-size: $base-size - 10;
+  // font-size: $base-size % 9;
+  font-size: $base-size / 3;
 }
