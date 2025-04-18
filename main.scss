@@ -48,5 +48,31 @@ $breakpoints: (
   background-color: map-get($colors, 'blue');
   width: map-get($widths, 'medium');
   height: map-get($heights, 'medium');
-  border-radius: map-get($border-radius , 'medium'); 
+  border-radius: map-get($border-radius , 'medium');
+  &:hover{
+    background-color: map-get($colors, 'green');
+  } 
+}
+
+$i:1;
+
+@while $i < 10 {
+  .item-#{$i} {
+    width: map-get($widths, 'small');
+    height: map-get($heights, 'small');
+    background-color: map-get($colors, 'red');
+    font-size: map-get($font-sizes, 'medium');
+    font-weight: map-get($font-weights, 'normal');
+    margin: map-get($spacing, 'small');
+    border-radius: map-get($border-radius, 'small');
+    @media (min-width: map-get($breakpoints, 'mobile')) {
+      width: map-get($widths, 'large');
+      height: map-get($heights, 'large');
+      font-size: map-get($font-sizes, 'large');
+      font-weight: map-get($font-weights, 'bold');
+      margin: map-get($spacing, 'large');
+      border-radius: map-get($border-radius, 'large');
+    }
+  }
+  $i: $i + 1;
 }
