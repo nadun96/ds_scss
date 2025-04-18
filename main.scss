@@ -1,92 +1,9 @@
-
-@import "button-styles";
-:root{
-    --main-color: #3498db;
-    --secondary-color: #2ecc71;
-    --font-size: 16px;
-} 
-$main-color: var(--main-color);
-$secondary-color: var(--secondary-color);
-$font-size: var(--font-size);
-$font-family: 'Arial, sans-serif';
-$font-weight: 400;
-$font-size-lg: 24px;
-$font-size-md: 18px;
-$font-size-sm: 14px;
-$font-size-xs: 12px;
-$font-weight-bold: 700;
-$font-weight-normal: 400;
-$font-weight-light: 300;
-$font-weight-bolder: 800;
-$font-weight-lighter: 200;
-
-
-$font-size : 50px;
-$color: rgb(98, 0, 255);
-
-// h1{
-//     font-size: $font-size;
-//     color: $color;
-//     font-weight: bold;
-// }
-
-ul{
-    list-style: none;
-    padding: 0;
-    margin: 0;
-
-    >li {
-        display: inline-block;
-        margin-right: 10px;
-        margin-bottom: 1rem;
-        &:last-child{
-            margin-right: 0;
-        }
-    }
+@function calcuate-height($height) {
+  @return $height + 250px;
 }
 
-h2{
-    font-size: $font-size-lg;
-    color: $main-color;
-    font-weight: $font-weight-bold;
-}
-
-@mixin display($direction, $align-items, $justify-content) {
-    flex-direction: $direction;
-    align-items: $align-items;
-    justify-content: $justify-content;
-}
-
-$width: 100px;
-$height: 100px;
-$border-color:#e67e22;
-
-div{
-    display: flex;
-    width: $width;
-    height:$height;
-    border: 1px solid $border-color;
-    @include display(column, center, center);
-}
-
-text-style{
-    font-size: $font-size;
-    color: $main-color;
-    font-weight: $font-weight-bold;
-    text-align: center;
-    text-transform: uppercase;
-    text-decoration: underline;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    letter-spacing: 1px;
-    line-height: 1.5;
-    word-spacing: 2px;
-    font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
-    font-size: 5rem;
-    font-style: italic;
-    font-variant: small-caps;
-}
-
-h1 {
-    font-style: optional;
-    @extend text-style;
+div {
+  height: calcuate-height(500px);
+  background-color: royalblue;
+  width: 100vh;
 }
